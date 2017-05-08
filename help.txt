@@ -1,0 +1,23 @@
+The game is about moving a block from its initial position to its goal state which is a hole of unit length.
+
+Now the block hasa three orientations :-
+	1. Vertical
+	2. Along Y axis
+	3. Along Z axis
+
+Assuming our board is on the x-y plane, we could saying that either the block is standig (in case 1) or lying down (in case 2 and 3).
+This property is useful in defining several interesting features of the game :-
+
+	1. Fragile Tiles : These tiles break if our block stands vertically at this cell/tile. So, one can only pass throug these tiles if in an lying down position.
+	2. Hard Switch : These are the switches that are activated only if the block stands vertically at tha particular cell/tile.
+	3. Soft Switch : These are the switches that are activated only if the block lies down horizontally and either of its cubic unit is on that particular cell/tile.
+
+Now, switches are special tiles that brings out/in the bridge tiles. So only if you activate a switch does a special bridge is visible that allows you to reach the destination.
+
+I have also provided the facility of viewing our game through different perspectives :-
+
+	1. Block View - z
+	2. Top view - x
+	3. Tower View - c
+	4. Follow-cam View - v
+	5. Helicopter-cam View - b
